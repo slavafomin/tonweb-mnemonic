@@ -1,7 +1,9 @@
 
 # tonweb-mnemonic
 
-[![NPM](https://img.shields.io/npm/v/tonweb-mnemonic.svg)](https://www.npmjs.org/package/tonweb-mnemonic)
+[![NPM](https://img.shields.io/npm/v/@moebius/tonweb-mnemonic.svg)](https://www.npmjs.com/package/@moebius/tonweb-mnemonic)
+[![NPM](https://img.shields.io/github/license/slavafomin/tonweb-mnemonic)](./LICENSE)
+
 
 Mnemonic code for generating deterministic keys for TON blockchain.
 
@@ -12,18 +14,19 @@ Mnemonic code for generating deterministic keys for TON blockchain.
   (mnemonic for Bitcoin),
 - there is only one dependency: `tweetnacl`,
 - supports both Browser (UMD) and Node.js (>=15, CommonJS)
+- written in TypeScript and provides typing declarations
 
 
 ## Install
 
-`npm install --save tonweb-mnemonic`
+`npm install --save @moebius/tonweb-mnemonic`
 
 
-## Old-school Install
+## Usage in browser
 
 ```html
 <script src="https://unpkg.com/tonweb/dist/web/index.js"></script>
-<script src="https://unpkg.com/tonweb-mnemonic@0.0.2/dist/tonweb-mnemonic.js"></script>
+<script src="https://unpkg.com/@moebius/tonweb-mnemonic@0.1.0/dist/web/index.js"></script>
 
 <script type="application/javascript">
     // TonWebMnemonic is set to window.TonWeb object if it exists:
@@ -32,10 +35,10 @@ Mnemonic code for generating deterministic keys for TON blockchain.
 ```
 
 
-## Example
+## Usage in Node.js
 
 ```js
-import tonMnemonic from "tonweb-mnemonic";
+import tonMnemonic from '@moebius/tonweb-mnemonic';
 
 async function example() {
     tonMnemonic.wordlists.EN;
