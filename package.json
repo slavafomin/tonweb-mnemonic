@@ -10,6 +10,7 @@
     "build:node": "webpack build --config-name node",
     "build:web": "webpack build --config-name web",
     "prepublishOnly": "npm run build:ci",
+    "test": "echo 'There are no tests yet'",
     "test:manual": "browser-sync start --server --index ./test/index.html --files ./dist"
   },
   "keywords": [
