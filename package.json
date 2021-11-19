@@ -1,6 +1,6 @@
 {
   "name": "@moebius/tonweb-mnemonic",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Mnemonic code for generating deterministic keys for TON (Telegram Open Network)",
   "main": "dist/node",
   "browser": "dist/web",
